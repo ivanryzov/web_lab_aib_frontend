@@ -1,23 +1,4 @@
-html {
-    height: 100%;
-  }
-  
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    margin: 0;
-    background-color: #98d980;
-  }
-  
-  button1 {
-    border: 1px solid #ef0303;
-    padding: 25px 50px;
-    color: rgb(9, 8, 8);
-    font-weight: 900;
-    font-size: 30px;
-    text-transform: uppercase;
-    background-color: rgb(28, 156, 96);
-    cursor: pointer;
-  } 
+.selector {
+  color: write;
+  background-color: MediumSlateBlue;
+}
