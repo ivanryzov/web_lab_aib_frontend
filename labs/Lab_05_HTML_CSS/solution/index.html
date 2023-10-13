@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Лабораторная работа №5</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="JavaScript.js"></script>
+
+  <style>
+    body {
+      font: 1.2em Helvetica, Arial, sans-serif;
+      margin: 20px;
+      padding: 0;
+      background-color: #ffffff;
+    }
+    .main-catalog {
+      max-width: 960px;
+      margin: 2em auto;
+    }
+
+    .col1,
+    .col2 {
+      background-color: #8a0f0f;
+    }
+
+    @media screen and (min-width: 600px) {
+      .col1 {
+        width: 31.24999999%;
+        float: left;
+      }
+
+      .item {
+        width: 64.58333331%;
+        float: right;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <img src="materials\logo.svg" alt="Логотип организации">
+    <nav>
+      <a href="#main-content">Содержимое</a>
+      <a href="https://yandex.ru/company/">Сайт</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <h1>Каталог лабораторной №3</h1>
+
+    <div class="main-catalog">
+      <div class="item">
+        <h3>Товар 1</h3>
+        <img src="materials\Photo_1.png" alt="Товар 1">
+        <p>Цена: 10 руб.</p>
+      </div>
+      <div class="item">
+        <h3>Товар 2</h3>
+        <img src="materials\Photo_2.png" alt="Товар 2">
+        
+        <p>Цена: 20 руб.</p>
+      </div>
+      <!-- Добавьте еще блоки item с информацией о товарах -->
+    </div>
+
+    <div class="promo-catalog">
+      <h2>Популярные товары</h2>
+      <div class="item">
+        <h3>Товар 3</h3>
+        <img src="materials\Photo_3.png" alt="Товар 3">
+       
+        <p>Цена: 30 руб.</p>
+      </div>
+      <div class="item">
+        <h3>Товар 4</h3>
+        <img src="materials\Photo_4.png" alt="Товар 4">
+      
+        <p>Цена: 40 руб.</p>
+      </div>
+      <div class="item">
+        <h3>Товар 5</h3>
+        <img src="materials\Photo_5.png" alt="Товар 5">
+        <p>Цена: 79 руб.</p>
