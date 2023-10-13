@@ -7,6 +7,7 @@
 </head>
 <body>
 <script>
+    //задание 1
     let apple = 10;
     console.log()
     alert(apple);
@@ -14,9 +15,98 @@
 
     var condition = 'Случайная строка';
     console.log('Good game is ' + condition);
+    //Задание 2
+    let someInt = 9;
+    let someText = '100';
+    let someBool = true;
+    console.log(someText + someInt);
+    console.log(someText + someText);
+    console.log(someText + someBool);
 
-    let num = 9;
-    let str =
+    console.log(someInt + someInt);
+    console.log(someInt + someText);
+    console.log(someInt + someBool);
+
+    console.log(someBool + someInt);
+    console.log(someBool + someText);
+    console.log(someBool + someBool);
+    //Задание 3
+    var arr = new Array(10);
+    for (var i = 0; i < arr.length; i++) {arr[i] = Math.round((Math.random()) * 100);}
+    arr = arr.filter(function(num) {
+        return num >= 0;
+    });
+    console.log(arr);
+    //Задание 4
+    function getRandomNumber() {
+        return Math.random();
+    }
+
+    var randomNumber = getRandomNumber();
+    console.log(randomNumber);
+
+    function multiplyArray(arr, num) {
+        return arr.map(function(element) {
+            return element * num;
+        });
+        }
+
+    var array = [1, 2, 3, 4, 5];
+    var multipliedArray = multiplyArray(array, 2);
+    console.log(multipliedArray);
+
+    var generateRandomWord = function() {
+        var words = ["apple", "banana", "cherry", "orange"];
+        var randomIndex = Math.floor(Math.random() * words.length);
+        return words[randomIndex];
+};
+console.log(generateRandomWord());
+
+//Задание 5
+    // Создание пустого объекта
+    var person = {};
+
+    // Добавление полей в объект
+    person.firstName = "Иван";
+    person.surname = "Рыжов";
+    person.patronymic = "Алексеевич";
+    person.birthday = "2003.11.28";
+    person.hobby = "чтение";
+    person.group = "A";
+
+    // Добавление метода в объект
+    person.getInfo = function() {
+        var fullName = this.surname + " " + this.firstName + " " + this.patronymic;
+        var age = new Date().getFullYear() - new Date(this.birthday).getFullYear();
+        return "ФИО: " + fullName + "\nгод рождения: " + this.birthday + "\nхобби: " + this.hobby + "\nвозраст: " + age;
+    };
+
+// Вызов метода и вывод результата через alert
+    alert(person.getInfo());
+
+    var salaries = {
+        "Александр": 5000,
+        "Игорь": 4500,
+        "Иван": 7000,
+        "Никита": 4000,
+        "Максим": 4800,
+    };
+
+    var managerSalaries = ["Александр", "Игорь", "Никита", "Максим"];
+    var totalSalary = 0;
+    var managerCount = 0;
+
+    for (var i = 0; i < managerSalaries.length; i++) {
+        var manager = managerSalaries[i];
+        if (salaries.hasOwnProperty(manager)) {
+            totalSalary += salaries[manager];
+            managerCount++;
+        }
+    }
+
+    var averageSalary = totalSalary / managerCount;
+    console.log(averageSalary);
+
 </script>
 </body>
 </html>
