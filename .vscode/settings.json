@@ -2,5 +2,6 @@
     "git.alwaysShowStagedChangesResourceGroup": true,
     "git.alwaysSignOff": true,
     "git.autofetch": false,
-    "git.autoStash": true
+    "git.autoStash": true,
+    "livePreview.defaultPreviewPath": "/labs/Lab_09_REACT_intro/solution/public/index.html"
 }
