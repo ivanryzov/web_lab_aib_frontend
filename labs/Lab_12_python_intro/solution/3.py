@@ -1,25 +1,21 @@
-def build_histogram(text):
-    # Создаем словарь для подсчета количества символов
-    histogram = {}
+from collections import Counter
+import string
 
-    # Подсчитываем количество символов в тексте
-    for char in text:
-        if char != ' ' and char != '\n':
-            histogram[char] = histogram.get(char, 0) + 1
+def histo(text):
+    amount = Counter(text)
+    symb = [char for char in amount if char not in string.whitespace]
+    symb.sort()
+    max_count = max(amount.values())
+    for i in range(max_count, 0, -1):
+        for char in symb:
+            if amount[char] >= i:
+                print('#', end=' ')
+            else:
+                print(' ', end=' ')
+        print()
+    for char in symb:
+        print(char,end=' ')
+    print()
 
-    # Сортируем символы по возрастанию кодов
-    sorted_chars = sorted(histogram.keys())
-
-    # Выводим гистограмму
-    for char in sorted_chars:
-        print('#' * histogram[char], char)
-
-# Считываем зашифрованный текст из файла
-encrypted_text = 'Twas brillig, and the slithy toves
-Did gyre and gimble in the wabe;
-All mimsy were the borogoves,
-And the mome raths outgrabe.
-'
-
-# Построение гистограммы количества символов
-build_histogram(encrypted_text)
+stream = input()
+histo(stream)
