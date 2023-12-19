@@ -1,4 +1,4 @@
-var f = new Array('apple', 'strawberry', 'blueberry', 'raspberry', 'lemon');
+let f = new Array('apple', 'strawberry', 'blueberry', 'raspberry', 'lemon');
 console.log(f.join('\n'));
 
 
