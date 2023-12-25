@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+td.today {
+  color: rgb(0, 0, 255);
+  font-weight: bold;
+}
+
+td.other {
+  filter: opacity(30%);
+}
+
+td.selected {
+  border: 1px solid rgb(255, 0, 0);
+}
+
+td.past {
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+}
+
+td.future {
+  font-weight: bold;
+}
